@@ -57,13 +57,12 @@ def write_to_file(data, file, mode="a"):
 
 
 def main():
-	file_name = "hosts.txt"
-
-	query = input("Enter a search query or url... ")
-	soup = get_soup(query)
-	hosts = extract_hosts(soup)
-	for i in hosts:
-		write_to_file(i, file_name)
+    file_name = "hosts.txt"
+    query = input("Enter a search query or url... ")
+    soup = get_soup(query)
+    hosts = extract_hosts(soup)
+    for i in hosts:
+       	write_to_file(i, file_name)
 
 
 if __name__ == "__main__":
